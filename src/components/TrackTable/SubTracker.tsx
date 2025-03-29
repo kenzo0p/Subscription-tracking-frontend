@@ -311,7 +311,7 @@ export default function SubscriptionTrackingTable() {
       {/* Table controls */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div className="relative gap-2 flex w-full sm:w-72">
-          <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+          <Search className="absolute left-2 top-2.5 h-4 w-4" />
           <Input
             placeholder="Search subscriptions..."
             className="pl-8"
@@ -661,7 +661,7 @@ export default function SubscriptionTrackingTable() {
 
       {/* Pagination */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-2">
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+        <div className="flex items-center gap-2 text-sm ">
           <div>
             {selectedSubscriptions.length} of {filteredSubscriptions.length}{" "}
             selected

@@ -3,8 +3,12 @@ import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
 import { cn } from "../lib/utils";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { RootState, store } from "../store/store";
+import { AuthState } from "../store/authSlice";
 
 export function LoginForm() {
+  const {user , setLoading} = useSelector((store :RootState) => store.authReducer)
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");
